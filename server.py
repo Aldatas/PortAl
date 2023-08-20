@@ -2,14 +2,11 @@ import socket
 
 
 def Main():
-    print("Host IP: ")
-    host = input()
+   
+    host = socket.gethostbyname(socket.gethostname())#'192.168.0.12' #Server ip
+    print(host)
     print("Port: ")
-    port = int(input())
-
-    # Config
-    # host = '' #Server ip
-    # port = 4000
+    port = input()
 
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     s.bind((host, port))

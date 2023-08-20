@@ -2,14 +2,11 @@ import socket
 
 
 def Main():
-    print("Host IP: ")
-    host = input()
-    print("Port: ")
-    port = int(input())
 
-    # Config
-    # host = '' #Server ip
-    # port = 4000
+    print("Host ip: ")
+    host= input()
+    print("Port: ")
+    port = input()
     
     server = (host, port)
     
